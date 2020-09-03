@@ -1,22 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta content="utf-8" http-equiv="encoding">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    
-   
-    <script src="site.js"></script>
+    <meta content="utf-8" http-equiv="encoding">
 
-    <link rel="stylesheet" href="site.css" />
+    <script src=" https://unpkg.com/vexflow/releases/vexflow-min.js"></script>
+    <script src="spaced.js"></script>
+    <script src="song.js"></script>
 
-    <title>index</title>
-  </head>
-  <body>
-    <h1>Hello, worlds!</h1>
+    <style>
+  
+        body {
+            display: block;
+            margin: 8px;
+        }
 
-    <button class="button" onclick="hello()"> Next </button>
-    
-  </body>
+        .button {
+                      border: none;
+            color: white;
+            padding: 5px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .green {
+            background-color: #00aa22 ;
+        }
+        .red {
+            background-color: #333 ;
+        }
+
+        .sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="sansserif">
+
+    <h2 id="title">Loading Exercises</h2>
+
+    <p id="info" > </p>
+    <div id="boo"></div>
+ 
+    <p id="buttons" >
+        <button class="button red" onclick="drawNotes()"> Next </button> 
+    </p>
+</body>
+
 </html>
