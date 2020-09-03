@@ -1,23 +1,16 @@
 
 var SONG = 0;
 
+var SongList = [];
+
 function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-
-        // Pick a remaining element...
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        // And swap it with the current element.
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * i)
+        const temp = array[i]
+        array[i] = array[j]
+        array[j] = temp
     }
 
-    return array;
 }
 
 function getBarNotes(attributes) {
@@ -102,8 +95,10 @@ function drawNotes() {
     }
 
     if (SONG == 1) {
-        attributes.songs = shuffle(attributes.songs);
+        shuffle(attributes.songs);
+        SongList = attributes.songs;
     }
+    attributes.songs = SongList;
 
     var div = document.getElementById("boo");
     var title = document.getElementById("title");
