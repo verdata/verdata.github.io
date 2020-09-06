@@ -31,6 +31,8 @@ function loadSongs(attributes) {
         pattern: [["8", "q", "8"], ["q", "8", "8"]]
     });
 
+   
+
     attributes.songs.push({
         title: "van Eyke: Doen Daphne (bars 19/20)",
         timeSignature: "3/4",
@@ -67,6 +69,7 @@ function loadSongs(attributes) {
         pattern: [["8", "8", "8", "8", "8", "8", "q"], ["8", "8", "8", "8", "8", "8", "q"]]
     });
 
+    /*
     attributes.songs.push({
         title: "van Eyke: Al hebben (modo 2 bars 1/2)",
         timeSignature: "4/4",
@@ -116,6 +119,24 @@ function loadSongs(attributes) {
         pattern: [["8d", "16", "8", "8", "8", "8", "8", "8"], ["8d", "16", "8", "8", "8", "8", "8", "8"]]
     });
 
+*/
+
+    attributes.songs.push({
+        title: "G Major Apreggio",
+        timeSignature: "",
+        keySignature: "G",
+        keys: [["d/6", "b/5", "g/5", "d/6", "b/5", "g/5", "d/5", "b/4", "g/4", "d/5", "b/4", "g/4"]],
+        pattern: [["8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"]]
+    });
+
+    attributes.songs.push({
+        title: "F Major Apreggio",
+        timeSignature: "",
+        keySignature: "F",
+        keys: [["c/6", "a/5", "f/5", "c/6", "a/5", "f/5", "c/5", "a/4", "f/4", "c/5", "a/4", "f/4"]],
+        pattern: [["8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"]]
+    });
+
     attributes.songs.push({
         title: "Bb Major Apreggio",
         timeSignature: "",
@@ -123,6 +144,8 @@ function loadSongs(attributes) {
         keys: [["b/4", "d/5", "f/5", "b/5", "f/5", "d/5", "b/4", "f/4", "d/5", "b/4"]],
         pattern: [["8", "8", "8", "8", "8", "8", "8", "8", "8", "qd"]]
     });
+
+/*
     attributes.songs.push({
         title: "C Major Apreggio",
         timeSignature: "",
@@ -151,6 +174,8 @@ function loadSongs(attributes) {
         keys: [["g/4", "b/4", "d/5", "g/5", "b/5", "d/6", "d/6", "b/5", "g/5", "d/5", "b/4", "g/4", "g/4"]],
         pattern: [["8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "qd"]]
     });
+
+
     attributes.songs.push({
         title: "G Minor Apreggio",
         timeSignature: "",
@@ -165,6 +190,6 @@ function loadSongs(attributes) {
         keys: [["a/4", "c/5", "e/5", "a/5", "c/6", "e/6", "e/6", "c/6", "a/5", "e/5", "c/5", "a/4", "a/4"]],
         pattern: [["8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "qd"]]
     });
-
+*/
 }
 
